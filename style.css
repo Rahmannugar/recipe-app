@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #fff, #ece9e6);
+  background: linear-gradient(to right, #fff, #ece9e6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Anton", sans-serif;
+}
+.title {
+  text-align: center;
+  margin-top: 0.8rem;
+}
+.mobile-container {
+  width: 20rem;
+  overflow: hidden;
+  border-radius: 0.1875rem;
+  background-color: white;
+  box-shadow: 0 0 0.625rem 0.125rem #3333331a;
+}
+img {
+  max-width: 100%;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+header input {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #eee;
+  border-radius: 0.1rem;
+}
+header button {
+  background-color: transparent;
+  color: #aaa;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 0.625rem;
+}
+.fav-container {
+  background-color: rgb(168, 137, 168);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+.fav-meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.fav-meals li {
+  position: relative;
+  margin: 0.3125rem;
+  width: 5.3125rem;
+}
+.fav-meals li .clear {
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  border: none;
+  font-size: 1.2rem;
+}
+.fav-meals li:hover .clear {
+  opacity: 1;
+}
+.fav-meals li img {
+  height: 3.125rem;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 4.375rem;
+  border: 2px solid rgb(170, 170, 170);
+  width: 4.375rem;
+  box-shadow: 0 0 0.625rem 0.125rem #3333331a;
+}
+.fav-meals li span {
+  font-size: 0.9rem;
+}
+.meal {
+  margin: 1.5rem;
+  border-radius: 3px;
+  box-shadow: 0 0 0.625rem 0.125rem #3333331a;
+}
+.meal-header {
+  position: relative;
+}
+.meal-header .random {
+  position: absolute;
+  top: 1rem;
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.meal-header img {
+  height: 17rem;
+  width: 100%;
+  object-fit: cover;
+}
+.meal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.meal-body h4 {
+  margin: 0;
+}
+.meal-body .fav-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: gray;
+}
+.meal-body .fav-btn.active {
+  color: red;
+}
+.meal-info {
+  padding: 1.5rem;
+}
+.meal-info h2 {
+  text-align: center;
+}
+.meal-info img {
+  height: 17rem;
+  width: 100%;
+  object-fit: cover;
+}
+.meal-info .close-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.5rem;
+}
