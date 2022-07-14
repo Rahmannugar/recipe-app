@@ -9,8 +9,7 @@ body {
   background: -webkit-linear-gradient(to right, #fff, #ece9e6);
   background: linear-gradient(to right, #fff, #ece9e6);
   display: flex;
-  align-items: center;
-  justify-content: center;
+
   min-height: 100vh;
   font-family: "Anton", sans-serif;
 }
@@ -19,7 +18,7 @@ body {
   margin-top: 0.8rem;
 }
 .mobile-container {
-  width: 20rem;
+  width: 100%;
   overflow: hidden;
   border-radius: 0.1875rem;
   background-color: white;
